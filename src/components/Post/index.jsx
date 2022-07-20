@@ -1,3 +1,5 @@
+import { CommentForm } from '../CommentForm'
+
 import styles from './styles.module.scss'
 
 const post = {
@@ -34,6 +36,8 @@ export function Post() {
         <a href="#">#rocketseat</a>
       </p>
       </div>
+
+      <CommentForm />
    </article>
   ) 
 }
