@@ -1,7 +1,7 @@
 import { PencilLine } from 'phosphor-react'
 import styles from './styles.module.scss'
 
-const profile = {
+export const profile = {
   name: 'Jeferson Fernandes',
   office: 'Web Developer', 
   avatar: 'https://github.com/jfernandesdev.png',

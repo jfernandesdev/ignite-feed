@@ -2,6 +2,8 @@
   background: var(--gray-800);
   border-radius: 8px;
   overflow: hidden;
+  position: sticky;
+  top: calc(75px + 2rem);
 
   footer {
     border-top: 1px solid var(--gray-600);
