@@ -1,13 +1,15 @@
 import { ThumbsUp, Trash } from 'phosphor-react'
+import { Avatar } from '../Avatar'
 
 import styles from './styles.module.scss'
 
 export function Comment() {
   return (
     <div className={styles.comment}>
-      <img
+      <Avatar
         src='https://github.com/jfernandesdev.png'
         alt='Jeferson Fernandes'
+        hasBorder={false}
       />
 
       <div className={styles.commentBox}>
@@ -21,7 +23,7 @@ export function Comment() {
                 title='20 de Julho às 19:32h'
                 dateTime='2022-07-20 19:32:00'
               >
-                Certa de 2h atrás
+                Cerca de 2h atrás
               </time>
             </div>
 
