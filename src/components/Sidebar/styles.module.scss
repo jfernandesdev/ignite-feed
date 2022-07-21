@@ -1,9 +1,19 @@
 .sidebar {
   background: var(--gray-800);
-  border-radius: 8px;
   overflow: hidden;
-  position: sticky;
-  top: calc(75px + 2rem);
+
+  @media (min-width: 768px) {
+    position: sticky;
+    top: calc(75px + 2rem);
+    border-radius: 8px;
+  }
+
+  @media(max-width: 768px) {
+    div > img {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
 
   footer {
     border-top: 1px solid var(--gray-600);
