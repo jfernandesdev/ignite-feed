@@ -1,4 +1,5 @@
 import { CommentForm } from '../CommentForm'
+import { Comment } from '../Comment'
 
 import styles from './styles.module.scss'
 
@@ -38,6 +39,13 @@ export function Post() {
       </div>
 
       <CommentForm />
+
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
+        
+      </div>
    </article>
   ) 
 }
