@@ -11,7 +11,7 @@ export const posts = [
       { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portfólio. É um projeto que fiz na Trilha de ReactJs do Ignite da Rocketseat. O nome do projeto é Ignite Feed 🚀'},
       { type: 'link', content: 'https://github.com/jfernandesdev/ignite-feed' },
     ],
-    publishedAt: new Date('2022-07-25 09:21:00'),
+    publishedAt: new Date(),
   },
    {
     id: 2,
@@ -21,7 +21,7 @@ export const posts = [
       role: 'Programadora | UI/UX Designer',
     },
     content: [
-      { type: 'paragraph', content: 'Fala galeraa 👋' },
+      { type: 'paragraph', content: 'Ei pessoal... 👋' },
       { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portfólio. É um projeto que fiz no NLW#5 by Rocketseat. O nome do projeto é Podcastr 🚀'},
       { type: 'link', content: 'https://github.com/jfernandesdev/podcastr' },
     ],
@@ -35,7 +35,7 @@ export const posts = [
       role: 'Web Developer | Pro-Play',
     },
     content: [
-      { type: 'paragraph', content: 'Fala galeraa 👋' },
+      { type: 'paragraph', content: 'Fala devs 👋' },
       { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portfólio. É um projeto que fiz na Trilha de ReactJs do Ignite da Rocketseat. O nome do projeto é Ignews 🚀'},
       { type: 'link', content: 'https://github.com/jfernandesdev/ignews' },
     ],
