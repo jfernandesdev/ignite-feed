@@ -8,9 +8,7 @@ import { Avatar } from '../Avatar'
 import styles from './styles.module.scss'
 
 export function Post({ author, publishedAt, content }) {
-  const [comments, setComments] = useState([
-    'Post muito bacana eih 👏🏽👏🏽🚀'
-  ])
+  const [comments, setComments] = useState(['Post muito bacana eih 👏🏽👏🏽🚀'])
 
   const [newCommentText, setNewCommentText] = useState('')
 
@@ -27,15 +25,23 @@ export function Post({ author, publishedAt, content }) {
     addSuffix: true,
   })
 
-  function handleNewCommentChange(){
+  function handleNewCommentChange() {
     setNewCommentText(event.target.value)
   }
 
   function handleCreateNewComment() {
     event.preventDefault()
-    
+
     setComments([...comments, newCommentText])
-    setNewCommentText('');
+    setNewCommentText('')
+  }
+
+  function deleteComment(commentToDelete) {
+    const commentsWithoutDeletedOne = comments.filter(comment => {
+      return comment !== commentToDelete;
+    })
+    
+    setComments(commentsWithoutDeletedOne);
   }
 
   return (
@@ -84,12 +90,12 @@ export function Post({ author, publishedAt, content }) {
       <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
 
-        <textarea 
-          name="comment" 
+        <textarea
+          name='comment'
           value={newCommentText}
           onChange={handleNewCommentChange}
-          placeholder='Deixe um comentário' 
-          />
+          placeholder='Deixe um comentário'
+        />
 
         <footer>
           <button type='submit'>Publicar</button>
@@ -98,7 +104,11 @@ export function Post({ author, publishedAt, content }) {
 
       <div className={styles.commentList}>
         {comments.map(comment => (
-          <Comment key={comment} content={comment}/>
+          <Comment
+            key={comment}
+            content={comment}
+            onDeleteComment={deleteComment}
+          />
         ))}
       </div>
     </article>
