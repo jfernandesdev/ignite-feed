@@ -47,7 +47,8 @@ $ yarn dev
 
 
 Dê uma olhada como o projeto ficou! 👀
-https://ignite-feed-jfernandesdev.vercel.app/
+
+https://feed-jfernandesdev.vercel.app/
 
 <br>
 
