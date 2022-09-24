@@ -45,6 +45,10 @@ Depois disso, execute:
 $ yarn dev
 ```
 
+
+Dê uma olhada como o projeto ficou! 👀
+https://ignite-feed-jfernandesdev.vercel.app/
+
 <br>
 
 <img src="https://i.ibb.co/Yckq764/footer-signature.png" alt="footer-signature" border="0"  width='400px' />
